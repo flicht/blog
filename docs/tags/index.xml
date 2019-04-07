@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Cupper</title>
-    <link>https://example.com/tags/</link>
+    <link>https://flicht.github.io/blog/tags/</link>
     <description>Recent content in Tags on Cupper</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://flicht.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Command Line</title>
-      <link>https://example.com/tags/command-line/</link>
+      <link>https://flicht.github.io/blog/tags/command-line/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/command-line/</guid>
+      <guid>https://flicht.github.io/blog/tags/command-line/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://example.com/tags/hugo/</link>
+      <link>https://flicht.github.io/blog/tags/hugo/</link>
       <pubDate>Thu, 14 Feb 2019 15:36:09 -0600</pubDate>
       
-      <guid>https://example.com/tags/hugo/</guid>
+      <guid>https://flicht.github.io/blog/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>https://example.com/tags/markdown/</link>
+      <link>https://flicht.github.io/blog/tags/markdown/</link>
       <pubDate>Thu, 14 Feb 2019 15:36:09 -0600</pubDate>
       
-      <guid>https://example.com/tags/markdown/</guid>
+      <guid>https://flicht.github.io/blog/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quotes</title>
-      <link>https://example.com/tags/quotes/</link>
+      <link>https://flicht.github.io/blog/tags/quotes/</link>
       <pubDate>Wed, 26 Dec 2018 00:29:41 -0600</pubDate>
       
-      <guid>https://example.com/tags/quotes/</guid>
+      <guid>https://flicht.github.io/blog/tags/quotes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Theme</title>
-      <link>https://example.com/tags/theme/</link>
+      <link>https://flicht.github.io/blog/tags/theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/theme/</guid>
+      <guid>https://flicht.github.io/blog/tags/theme/</guid>
       <description></description>
     </item>
     
