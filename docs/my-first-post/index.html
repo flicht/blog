@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.54.0" />
-  <link rel="canonical" href="https://flicht.github.io/blog/post/">
+  <link rel="canonical" href="https://flicht.github.io/blog/my-first-post/">
 
   
 
@@ -32,7 +32,7 @@
 
   
   
-  <title>Blog | Cupper</title>
+  <title>My First Post | Cupper</title>
 </head>
 
   <body>
@@ -223,55 +223,107 @@
         <div>
           
   <main id="main">
-    <h1>Blog</h1>
-    <ul class="patterns-list">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      My First Post
+    </h1>
+    <div class="date">
+      
+      <strong aria-hidden="true">Publish date: </strong>Apr 7, 2019
+    </div>
     
-      <li>
-        <h2>
-          <a href="https://flicht.github.io/blog/my-first-post/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            My First Post
-          </a>
-        </h2>
-      </li>        
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://flicht.github.io/blog/tags/tutorial/">tutorial</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://flicht.github.io/blog/tags/walkthrough/">walkthrough</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://flicht.github.io/blog/tags/hugo/">hugo</a>
+            </li>
+          
+        </ul>
+      </div>
     
-      <li>
-        <h2>
-          <a href="https://flicht.github.io/blog/cupper-typography/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Cupper Typography
-          </a>
-        </h2>
-      </li>        
     
-      <li>
-        <h2>
-          <a href="https://flicht.github.io/blog/quotes-by-carl-jung/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Quotes by Carl Jung
-          </a>
-        </h2>
-      </li>        
+      
+
+
     
-      <li>
-        <h2>
-          <a href="https://flicht.github.io/blog/creating-a-new-theme/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Creating a New Theme
-          </a>
-        </h2>
-      </li>        
     
-    </ul>
+
+<h1 id="hello-there">Hello There</h1>
+
+<p>This is the first post I believe, and will serve as a a Readme in how to setup a hugo post. meta right.</p>
+
+<h1 id="writing-a-new-post">Writing a new post</h1>
+
+<p>It&rsquo;s pretty simple to start a new blog post. From your root folder (not sure that this is actually necessary) enter:</p>
+
+<p><code>hugo new post/my-post.md</code></p>
+
+<p>On the Hugo tutorial site it replaces <code>post</code> with <code>posts</code> above. A bit sloppy from the theme if you ask me.</p>
+
+<h1 id="editing-the-post">Editing the post</h1>
+
+<p>The post starts off as a draft. You can see this at the top of the markdown file. It shows</p>
+
+<pre><code>---
+title: blah
+date: today's date
+draft: true
+---
+</code></pre>
+
+<p>I don&rsquo;t know what this top of the markdown file config file thing is called, but it is pretty self explanatory.</p>
+
+<p>I don&rsquo;t know all of the keywords that you can use. But as well as the three above (date and title are auto generated from the command), in the theme that I am using you can add <code>tags</code></p>
+
   </main>
+  <div id="disqus-container">
+  
+    <button id="disqus-button" onclick="showComments()">Show comments</button>
+    <div id="disqus-comments">
+      
+      
+      
+        <p><em>Disqus comments are disabled.</em></p>
+        <script type="application/javascript">
+          function showComments() {
+            // Remove button
+var disqusButton = document.getElementById('disqus-button');
+disqusButton.parentNode.removeChild(disqusButton); 
+// Un-hide comments
+var disqusComments = document.getElementById('disqus-comments');
+disqusComments.style.display = 'block'; 
+          }
+        </script>
+      
+      <noscript>Enable JavaScript to view Disqus comments.</noscript>
+    </div>
+  
+</div>
+
 
           <footer role="contentinfo">
   <div>
