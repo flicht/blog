@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on Cupper</title>
+    <title>Hugo on </title>
     <link>https://flicht.github.io/blog/tags/hugo/</link>
-    <description>Recent content in Hugo on Cupper</description>
+    <description>Recent content in Hugo on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Apr 2019 16:24:07 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 08 Apr 2019 23:10:37 +0100</lastBuildDate>
     
 	<atom:link href="https://flicht.github.io/blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Configuring Hugo</title>
+      <link>https://flicht.github.io/blog/configuring-hugo/</link>
+      <pubDate>Mon, 08 Apr 2019 23:10:37 +0100</pubDate>
+      
+      <guid>https://flicht.github.io/blog/configuring-hugo/</guid>
+      <description>Changing the logo Firstly to change your logo, put your svg in static/images/logo.svg. I used an png and put it through an online svg converter.
+Custom CSS To make a custom css file, we need to overwrite the css of the template. We don&amp;rsquo;t want delete the template of course.
+Run grep -r &#39;css&#39; ./themes/cupper-hugo-theme/layouts from your hugo root dir.
+With this theme I got:
+./themes/cupper-hugo-theme/layouts/partials/katex.html:&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css&amp;quot; integrity=&amp;quot;sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt; .</description>
+    </item>
     
     <item>
       <title>My First Post</title>

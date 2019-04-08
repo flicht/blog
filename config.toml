@@ -1,7 +1,7 @@
 baseURL = "https://flicht.github.io/blog/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "Cupper"
+title = ""
 theme = "cupper-hugo-theme"
 googleAnalytics = "UA-123456789-1"
 disqusShortname = "yourdiscussshortname"
@@ -18,9 +18,9 @@ publishDir = "docs"
   quality = 99
 
 [params]
-  description = "An accessibility-friendly Hugo theme, ported from the [original Cupper](https://github.com/ThePacielloGroup/cupper) project."
+  description = "Freddie Lichtenstein. [FredLich.](https:fredlich.com)"
   homeMetaContent = "An accessibility-friendly Hugo theme, ported from the original Cupper project."
-  footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/)."
+  footer = "Freddie Lichtenstein © 2019"
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat = "Jan 2, 2006"
   codePenUser = "someUser"
