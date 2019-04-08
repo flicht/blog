@@ -56,4 +56,24 @@ to this:
 
 This fixes the broken link on the logo (going to the home page)
 
-# Getting the date on the posts on blog page
+# Add the date on the posts on blog page
+
+Add the following two lines to ```list.html```
+
+```
+{{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
+<h4 id='blog-date' class='date'>{{ .PublishDate.Format $dateFormat   }}</h4>
+```
+
+Add the first line before the loop, add the second under the title
+
+Then add this to your custom css:
+```
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+#blog-date {
+
+    font-size: 20px;font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-style: italic;
+}
+```
