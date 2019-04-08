@@ -305,15 +305,38 @@
 
 <p>Change line 4 in <code>header.html</code>, which is:</p>
 
-<p><code>&lt;a class=&quot;logo&quot; href=&quot;/&quot; aria-label=&quot;{{ .Site.Title }} home page&quot;&gt;</code></p>
+<pre><code class="language-&lt;a">
+to this:
 
-<p>to this:</p>
+```&lt;a class=&quot;logo&quot; href=&quot;{{ .Site.BaseURL }}&quot; aria-label=&quot;{{ .Site.Title }} home page&quot;&gt;```
 
-<p><code>&lt;a class=&quot;logo&quot; href=&quot;{{ .Site.BaseURL }}&quot; aria-label=&quot;{{ .Site.Title }} home page&quot;&gt;</code></p>
+This fixes the broken link on the logo (going to the home page)
 
-<p>This fixes the broken link on the logo (going to the home page)</p>
+# Add the date on the posts on blog page
 
-<h1 id="getting-the-date-on-the-posts-on-blog-page">Getting the date on the posts on blog page</h1>
+Add the following two lines to ```list.html```
+
+</code></pre>
+
+<p>{{ $dateFormat := $.Site.Params.dateFormat | default &ldquo;Jan 2, 2006&rdquo; }}
+<h4 id='blog-date' class='date'>{{ .PublishDate.Format $dateFormat   }}</h4></p>
+
+<pre><code>
+Add the first line before the loop, add the second under the title
+
+Then add this to your custom css:
+</code></pre>
+
+<p>@import url(&lsquo;<a href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono'">https://fonts.googleapis.com/css?family=IBM+Plex+Mono'</a>);
+#blog-date {</p>
+
+<pre><code>font-size: 20px;font-family: 'IBM Plex Mono', monospace;
+font-weight: bold;
+font-style: italic;
+</code></pre>
+
+<p>}
+```</p>
 
   </main>
   <div id="disqus-container">
