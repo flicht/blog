@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
 
 .pattern [aria-current] {
-    background-color: #11113f;
+    background-color: #11113f !important;
 }
 
 .button {
