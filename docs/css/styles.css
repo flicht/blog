@@ -148,6 +148,7 @@ pre,
 code {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-size: 0.85em;
+    background-color: #000
 }
 .cmd {
     padding: 0.75rem;
