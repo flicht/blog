@@ -13,10 +13,10 @@
     
     <item>
       <title>My First Post</title>
-      <link>https://flicht.github.io/blog//my-first-post/</link>
+      <link>https://flicht.github.io/blog/posts/my-first-post/</link>
       <pubDate>Sun, 07 Apr 2019 16:24:07 +0100</pubDate>
       
-      <guid>https://flicht.github.io/blog//my-first-post/</guid>
+      <guid>https://flicht.github.io/blog/posts/my-first-post/</guid>
       <description>Hello There This is the first post I believe, and will serve as a a Readme in how to setup a hugo post. meta right.
 Writing a new post It&amp;rsquo;s pretty simple to start a new blog post. From your root folder (not sure that this is actually necessary) enter:
 hugo new post/my-post.md

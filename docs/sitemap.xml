@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://flicht.github.io/blog//configuring-hugo/</loc>
+    <loc>https://flicht.github.io/blog/posts/configuring-hugo/</loc>
     <lastmod>2019-04-08T23:10:37+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://flicht.github.io/blog//my-first-post/</loc>
+    <loc>https://flicht.github.io/blog/posts/my-first-post/</loc>
     <lastmod>2019-04-07T16:24:07+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://flicht.github.io/blog//cupper-typography/</loc>
+    <loc>https://flicht.github.io/blog/posts/cupper-typography/</loc>
     <lastmod>2019-02-14T15:36:09-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://flicht.github.io/blog//quotes-by-carl-jung/</loc>
+    <loc>https://flicht.github.io/blog/posts/quotes-by-carl-jung/</loc>
     <lastmod>2018-12-26T00:29:41-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://flicht.github.io/blog//creating-a-new-theme/</loc>
+    <loc>https://flicht.github.io/blog/posts/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -34,7 +34,7 @@
   </url>
   
   <url>
-    <loc>https://flicht.github.io/blog/</loc>
+    <loc>https://flicht.github.io/blog/posts/</loc>
     <lastmod>2019-04-08T23:10:37+01:00</lastmod>
   </url>
   

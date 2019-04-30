@@ -6,12 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.54.0" />
-  <link rel="canonical" href="https://flicht.github.io/blog/">
+  <link rel="canonical" href="https://flicht.github.io/blog/blog/configuring-hugo/">
 
-  
-    
-      <meta name="description" content="An accessibility-friendly Hugo theme, ported from the original Cupper project.">
-    
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -39,9 +35,7 @@
 
   
   
-    
-  
-  <title></title>
+  <title>Configuring Hugo | </title>
 </head>
 
   <body>
@@ -219,8 +213,79 @@
         <div>
           
   <main id="main">
-    <h1></h1>
+    <h1>Configuring Hugo</h1>
     
+
+<h1 id="changing-the-logo">Changing the logo</h1>
+
+<p>Firstly to change your logo, put your svg in <code>static/images/logo.svg</code>. I used an png and put it through an online svg converter.</p>
+
+<h1 id="custom-css">Custom CSS</h1>
+
+<p>To make a custom css file, we need to overwrite the css of the template. We don&rsquo;t want delete the template of course.</p>
+
+<p>Run <code>grep -r 'css' ./themes/cupper-hugo-theme/layouts</code> from your hugo root dir.</p>
+
+<p>With this theme I got:</p>
+
+<pre><code>./themes/cupper-hugo-theme/layouts/partials/katex.html:&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css&quot; integrity=&quot;sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ&quot; crossorigin=&quot;anonymous&quot;&gt;
+./themes/cupper-hugo-theme/layouts/partials/head.html:  &lt;link rel=&quot;stylesheet&quot; href=&quot;{{ &quot;css/prism.css&quot; | absURL }}&quot; media=&quot;none&quot; onload=&quot;this.media='all';&quot;&gt;
+./themes/cupper-hugo-theme/layouts/partials/head.html:  {{ $templateStyles := resources.Get &quot;css/template-styles.css&quot; }}
+./themes/cupper-hugo-theme/layouts/partials/head.html:  {{ $styles := $templateStyles | resources.ExecuteAsTemplate &quot;css/styles.css&quot; . }}
+./themes/cupper-hugo-theme/layouts/partials/head.html:  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;{{ $styles.Permalink }}&quot;&gt;
+./themes/cupper-hugo-theme/layouts/partials/head.html:  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;{{ $custom.Permalink }}&quot;&gt;
+</code></pre>
+
+<p>It looks like the stylesheet is being referenced in the <code>head.html</code> file. The css referenced is <code>css/styles.css</code>. This looks like out main template style sheet. So we must reference our css after this.</p>
+
+<p>If you look above at this line <code>{{ $styles := $templateStyles | resources.ExecuteAsTemplate &quot;css/styles.css&quot; . }}</code>. This is some logic to assign a something to a variable <code>styles</code>.</p>
+
+<p>Initially I changed the <code>css/styles.css</code> to <code>css/custom.css</code> and made a put my own <code>custom.css</code> in <code>static/css/</code>. To be honest, I totally guessed at this location. The whole page broke - something is changing.</p>
+
+<p>Instead of replacing, add this line</p>
+
+<pre><code>{{ $custom := $templateStyles | resources.ExecuteAsTemplate &quot;css/custom.css&quot; . }}
+</code></pre>
+
+<p>To this file <code>./themes/cupper-hugo-theme/layouts/partials/head.html</code>. Place it just below the other line.</p>
+
+<p>Hey! It works!</p>
+
+<h1 id="fixing-the-link-on-the-logo">Fixing the link on the logo</h1>
+
+<p>Change line 4 in <code>header.html</code>, which is:</p>
+
+<pre><code>&lt;a class=&quot;logo&quot; href=&quot;/&quot; aria-label=&quot;{{ .Site.Title }} home page&quot;&gt;
+</code></pre>
+
+<p>to this:</p>
+
+<pre><code>&lt;a class=&quot;logo&quot; href=&quot;{{ .Site.BaseURL }}&quot; aria-label=&quot;{{ .Site.Title }} home page&quot;&gt;
+</code></pre>
+
+<p>This fixes the broken link on the logo (going to the home page)</p>
+
+<h1 id="add-the-date-on-the-posts-on-blog-page">Add the date on the posts on blog page</h1>
+
+<p>Add the following two lines to <code>list.html</code></p>
+
+<pre><code>{{ $dateFormat := $.Site.Params.dateFormat | default &quot;Jan 2, 2006&quot; }}
+&lt;h4 id='blog-date' class='date'&gt;{{ .PublishDate.Format $dateFormat   }}&lt;/h4&gt;
+</code></pre>
+
+<p>Add the first line before the loop, add the second under the title</p>
+
+<p>Then add this to your custom css:</p>
+
+<pre><code>@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+#blog-date {
+
+    font-size: 20px;font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-style: italic;
+}
+</code></pre>
+
   </main>
 
           <footer role="contentinfo">

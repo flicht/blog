@@ -14,7 +14,7 @@ Firstly to change your logo, put your svg in ```static/images/logo.svg```. I use
 
 To make a custom css file, we need to overwrite the css of the template. We don't want delete the template of course.
 
-Run ``` grep -r 'css' ./themes/cupper-hugo-theme/layouts ``` from your hugo root dir.
+Run `grep -r 'css' ./themes/cupper-hugo-theme/layouts` from your hugo root dir.
 
 With this theme I got:
 ```
@@ -48,11 +48,15 @@ Hey! It works!
 
 Change line 4 in ```header.html```, which is:
 
-```<a class="logo" href="/" aria-label="{{ .Site.Title }} home page">```
+```
+<a class="logo" href="/" aria-label="{{ .Site.Title }} home page">
+```
 
 to this:
 
-```<a class="logo" href="{{ .Site.BaseURL }}" aria-label="{{ .Site.Title }} home page">```
+```
+<a class="logo" href="{{ .Site.BaseURL }}" aria-label="{{ .Site.Title }} home page">
+```
 
 This fixes the broken link on the logo (going to the home page)
 

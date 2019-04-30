@@ -33,7 +33,7 @@ publishDir = "docs"
   #   weight = 1
   [[menu.nav]]
     name = "Blog"
-    url = "/"
+    url = "/blog"
     weight = 2
   [[menu.nav]]
     name = "Tags"
