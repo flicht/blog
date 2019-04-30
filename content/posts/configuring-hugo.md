@@ -44,6 +44,17 @@ To this file ```./themes/cupper-hugo-theme/layouts/partials/head.html```. Place 
 
 Hey! It works!
 
+**Update 30/04/19**
+---
+
+Ok now this doesn't work! You can simply add this line to make it work. I think custom.css might be a reserved word, so I changed it to custom1.css. Add this to the head.html file.
+
+```
+  <link rel="stylesheet" type="text/css" href="{{"css/custom1.css" | absURL }}" media="none" onload="this.media='all';">
+```
+
+Delete the previous lines that this posts suggests
+
 # Fixing the link on the logo
 
 Change line 4 in ```header.html```, which is:
