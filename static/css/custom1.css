@@ -9,7 +9,11 @@
     background-color: #11113f !important;
 }
 
-label {
+.button {
+    background-color: #11113f !important;
+}
+
+.label {
     background: #11113f !important;
 }
 
