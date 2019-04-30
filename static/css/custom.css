@@ -5,8 +5,12 @@
     background-color: #11113f !important;
 }
 
-.button {
-    background: #11113f ;
+#menu-button {
+    background-color: #11113f !important;
+}
+
+label {
+    background: #11113f !important;
 }
 
 
