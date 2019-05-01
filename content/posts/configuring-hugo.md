@@ -55,17 +55,6 @@ Ok now this doesn't work! You can simply add this line to make it work. I think 
 
 Delete the previous lines that this posts suggests
 
-# Fixing the link on the logo
-
-Change line 4 in ```header.html```, which is:
-
-```
-<a class="logo" href="/" aria-label="{{ .Site.Title }} home page">
-```
-
-to this:
-
-```
 <a class="logo" href="{{ .Site.BaseURL }}" aria-label="{{ .Site.Title }} home page">
 ```
 
