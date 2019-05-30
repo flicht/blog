@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on </title>
+    <title></title>
     <link>https://flicht.github.io/blog/blog/</link>
-    <description>Recent content in Blog on </description>
+    <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Apr 2019 23:10:37 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 30 May 2019 17:04:03 +0100</lastBuildDate>
     
 	<atom:link href="https://flicht.github.io/blog/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Petition For Brexit </title>
+      <link>https://flicht.github.io/blog/blog/petition-brexit/</link>
+      <pubDate>Thu, 30 May 2019 17:04:03 +0100</pubDate>
+      
+      <guid>https://flicht.github.io/blog/blog/petition-brexit/</guid>
+      <description>The Task A new petition was put up in the wake of this brexit mess. The petition was simple - Revoke Article 50 and remain in the EU.
+It was started by a woman named Margaret Anne Georgiadou who ended up being on the receiving end of multiple death threats
+It became of interest to me as this petition went viral and the number of signatures began to ballon just how quickly it was going up.</description>
+    </item>
     
     <item>
       <title>Configuring Hugo</title>

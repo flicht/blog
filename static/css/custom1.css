@@ -37,3 +37,8 @@ pre {
     font-weight: bold;
     font-style: italic;
 }
+
+.plot {
+    background-color: transparent !important; 
+}
+

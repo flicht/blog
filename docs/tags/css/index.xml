@@ -13,10 +13,10 @@
     
     <item>
       <title>Configuring Hugo</title>
-      <link>https://flicht.github.io/blog/posts/configuring-hugo/</link>
+      <link>https://flicht.github.io/blog/blog/configuring-hugo/</link>
       <pubDate>Mon, 08 Apr 2019 23:10:37 +0100</pubDate>
       
-      <guid>https://flicht.github.io/blog/posts/configuring-hugo/</guid>
+      <guid>https://flicht.github.io/blog/blog/configuring-hugo/</guid>
       <description>Changing the logo Firstly to change your logo, put your svg in static/images/logo.svg. I used an png and put it through an online svg converter.
 Custom CSS To make a custom css file, we need to overwrite the css of the template. We don&amp;rsquo;t want delete the template of course.
 Run grep -r &#39;css&#39; ./themes/cupper-hugo-theme/layouts from your hugo root dir.

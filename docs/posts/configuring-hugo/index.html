@@ -260,40 +260,36 @@
 
 <p>Delete the previous lines that this posts suggests</p>
 
-<h1 id="fixing-the-link-on-the-logo">Fixing the link on the logo</h1>
+<p><a class="logo" href="{{ .Site.BaseURL }}" aria-label="{{ .Site.Title }} home page"></p>
 
-<p>Change line 4 in <code>header.html</code>, which is:</p>
+<pre><code>
+This fixes the broken link on the logo (going to the home page)
 
-<pre><code>&lt;a class=&quot;logo&quot; href=&quot;/&quot; aria-label=&quot;{{ .Site.Title }} home page&quot;&gt;
+# Add the date on the posts on blog page
+
+Add the following two lines to ```list.html```
+
 </code></pre>
 
-<p>to this:</p>
+<p>{{ $dateFormat := $.Site.Params.dateFormat | default &ldquo;Jan 2, 2006&rdquo; }}
+<h4 id='blog-date' class='date'>{{ .PublishDate.Format $dateFormat   }}</h4></p>
 
-<pre><code>&lt;a class=&quot;logo&quot; href=&quot;{{ .Site.BaseURL }}&quot; aria-label=&quot;{{ .Site.Title }} home page&quot;&gt;
+<pre><code>
+Add the first line before the loop, add the second under the title
+
+Then add this to your custom css:
 </code></pre>
 
-<p>This fixes the broken link on the logo (going to the home page)</p>
+<p>@import url(&lsquo;<a href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono'">https://fonts.googleapis.com/css?family=IBM+Plex+Mono'</a>);
+#blog-date {</p>
 
-<h1 id="add-the-date-on-the-posts-on-blog-page">Add the date on the posts on blog page</h1>
-
-<p>Add the following two lines to <code>list.html</code></p>
-
-<pre><code>{{ $dateFormat := $.Site.Params.dateFormat | default &quot;Jan 2, 2006&quot; }}
-&lt;h4 id='blog-date' class='date'&gt;{{ .PublishDate.Format $dateFormat   }}&lt;/h4&gt;
+<pre><code>font-size: 20px;font-family: 'IBM Plex Mono', monospace;
+font-weight: bold;
+font-style: italic;
 </code></pre>
 
-<p>Add the first line before the loop, add the second under the title</p>
-
-<p>Then add this to your custom css:</p>
-
-<pre><code>@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
-#blog-date {
-
-    font-size: 20px;font-family: 'IBM Plex Mono', monospace;
-    font-weight: bold;
-    font-style: italic;
-}
-</code></pre>
+<p>}
+```</p>
 
   </main>
 

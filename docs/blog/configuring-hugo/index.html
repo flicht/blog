@@ -251,40 +251,45 @@
 
 <p>Hey! It works!</p>
 
-<h1 id="fixing-the-link-on-the-logo">Fixing the link on the logo</h1>
+<h2 id="update-30-04-19"><strong>Update 30/04/19</strong></h2>
 
-<p>Change line 4 in <code>header.html</code>, which is:</p>
+<p>Ok now this doesn&rsquo;t work! You can simply add this line to make it work. I think custom.css might be a reserved word, so I changed it to custom1.css. Add this to the head.html file.</p>
 
-<pre><code>&lt;a class=&quot;logo&quot; href=&quot;/&quot; aria-label=&quot;{{ .Site.Title }} home page&quot;&gt;
+<pre><code>  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;{{&quot;css/custom1.css&quot; | absURL }}&quot; media=&quot;none&quot; onload=&quot;this.media='all';&quot;&gt;
 </code></pre>
 
-<p>to this:</p>
+<p>Delete the previous lines that this posts suggests</p>
 
-<pre><code>&lt;a class=&quot;logo&quot; href=&quot;{{ .Site.BaseURL }}&quot; aria-label=&quot;{{ .Site.Title }} home page&quot;&gt;
+<p><a class="logo" href="{{ .Site.BaseURL }}" aria-label="{{ .Site.Title }} home page"></p>
+
+<pre><code>
+This fixes the broken link on the logo (going to the home page)
+
+# Add the date on the posts on blog page
+
+Add the following two lines to ```list.html```
+
 </code></pre>
 
-<p>This fixes the broken link on the logo (going to the home page)</p>
+<p>{{ $dateFormat := $.Site.Params.dateFormat | default &ldquo;Jan 2, 2006&rdquo; }}
+<h4 id='blog-date' class='date'>{{ .PublishDate.Format $dateFormat   }}</h4></p>
 
-<h1 id="add-the-date-on-the-posts-on-blog-page">Add the date on the posts on blog page</h1>
+<pre><code>
+Add the first line before the loop, add the second under the title
 
-<p>Add the following two lines to <code>list.html</code></p>
-
-<pre><code>{{ $dateFormat := $.Site.Params.dateFormat | default &quot;Jan 2, 2006&quot; }}
-&lt;h4 id='blog-date' class='date'&gt;{{ .PublishDate.Format $dateFormat   }}&lt;/h4&gt;
+Then add this to your custom css:
 </code></pre>
 
-<p>Add the first line before the loop, add the second under the title</p>
+<p>@import url(&lsquo;<a href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono'">https://fonts.googleapis.com/css?family=IBM+Plex+Mono'</a>);
+#blog-date {</p>
 
-<p>Then add this to your custom css:</p>
-
-<pre><code>@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
-#blog-date {
-
-    font-size: 20px;font-family: 'IBM Plex Mono', monospace;
-    font-weight: bold;
-    font-style: italic;
-}
+<pre><code>font-size: 20px;font-family: 'IBM Plex Mono', monospace;
+font-weight: bold;
+font-style: italic;
 </code></pre>
+
+<p>}
+```</p>
 
   </main>
 

@@ -13,10 +13,10 @@
     
     <item>
       <title>Configuring Hugo</title>
-      <link>https://flicht.github.io/blog/posts/configuring-hugo/</link>
+      <link>https://flicht.github.io/blog/blog/configuring-hugo/</link>
       <pubDate>Mon, 08 Apr 2019 23:10:37 +0100</pubDate>
       
-      <guid>https://flicht.github.io/blog/posts/configuring-hugo/</guid>
+      <guid>https://flicht.github.io/blog/blog/configuring-hugo/</guid>
       <description>Changing the logo Firstly to change your logo, put your svg in static/images/logo.svg. I used an png and put it through an online svg converter.
 Custom CSS To make a custom css file, we need to overwrite the css of the template. We don&amp;rsquo;t want delete the template of course.
 Run grep -r &#39;css&#39; ./themes/cupper-hugo-theme/layouts from your hugo root dir.
@@ -26,10 +26,10 @@ With this theme I got:
     
     <item>
       <title>My First Post</title>
-      <link>https://flicht.github.io/blog/posts/my-first-post/</link>
+      <link>https://flicht.github.io/blog/blog/my-first-post/</link>
       <pubDate>Sun, 07 Apr 2019 16:24:07 +0100</pubDate>
       
-      <guid>https://flicht.github.io/blog/posts/my-first-post/</guid>
+      <guid>https://flicht.github.io/blog/blog/my-first-post/</guid>
       <description>Hello There This is the first post I believe, and will serve as a a Readme in how to setup a hugo post. meta right.
 Writing a new post It&amp;rsquo;s pretty simple to start a new blog post. From your root folder (not sure that this is actually necessary) enter:
 hugo new post/my-post.md
@@ -38,10 +38,10 @@ On the Hugo tutorial site it replaces post with posts above. A bit sloppy from t
     
     <item>
       <title>Cupper Typography</title>
-      <link>https://flicht.github.io/blog/posts/cupper-typography/</link>
+      <link>https://flicht.github.io/blog/blog/cupper-typography/</link>
       <pubDate>Thu, 14 Feb 2019 15:36:09 -0600</pubDate>
       
-      <guid>https://flicht.github.io/blog/posts/cupper-typography/</guid>
+      <guid>https://flicht.github.io/blog/blog/cupper-typography/</guid>
       <description>Headings # Heading 1 ## Heading 2 ### Heading 3 #### Heading 4 ##### Heading 5 ###### Heading 6  Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Text *This text will be italic* _This will also be italic_ **This text will be bold** __This will also be bold__ _You **can** combine them_  This text will be italic
 This will also be italic
 This text will be bold</description>
@@ -49,10 +49,10 @@ This text will be bold</description>
     
     <item>
       <title>Creating a New Theme</title>
-      <link>https://flicht.github.io/blog/posts/creating-a-new-theme/</link>
+      <link>https://flicht.github.io/blog/blog/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://flicht.github.io/blog/posts/creating-a-new-theme/</guid>
+      <guid>https://flicht.github.io/blog/blog/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
